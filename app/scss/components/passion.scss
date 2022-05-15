@@ -1,0 +1,108 @@
+.container {
+  margin: 2rem auto;
+  .caption {
+    float: left;
+    min-height: 20rem;
+    margin: auto 0;
+    margin: 7rem 0;
+    width: 30%;
+    ul {
+      list-style: none;
+      font-weight: 700;
+      font-size: 4rem;
+      margin: 0;
+      padding: 0;
+      li {
+        letter-spacing: 9px;
+      }
+    }
+  }
+  .active:not(:first-child) {
+    .description {
+      display: none;
+    }
+  }
+  .passion {
+    float: right;
+    min-height: 20rem;
+    min-width: 10rem;
+    padding-right: 1rem;
+    width: 70%;
+    display: flex;
+    // gap:2rem;
+    align-items: center;
+    justify-content: space-between;
+    .item {
+      max-width: 100%;
+      height: 37rem;
+      width: 10rem;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: top;
+      padding: 0 1rem;
+      &:not(.active) {
+        .description {
+          display: none;
+        }
+        border: solid 1px #ccc;
+      }
+      &.active {
+        .square-title {
+          display: none;
+        }
+      }
+      .description {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 27rem;
+        width: inherit;
+        padding: 0 5rem;
+        color: white;
+        font-size: 1.9rem;
+        .title {
+          width: 7ch;
+        }
+      }
+      .square-title{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 27rem;
+        color: white;
+        font-size: 1.9rem;
+        .title{
+            z-index: 1;
+            transform: rotate(-90deg);
+            margin-left: -27px;
+            letter-spacing: 4px;
+        }
+        .square{
+            background-color: #1e1e2f;
+            display: block;
+            height: 9rem;
+            margin-left: -17px;
+            margin-top: 70px;
+            position: absolute;
+            width: 139px;
+        }
+      }
+    }
+    // &:first-child{
+
+    //   .description {
+    //         display: none;
+    //   }
+    // }
+    .active {
+      width: 30rem;
+      background-size: cover;
+      //   .description {
+      //           display: none;
+      // }
+    }
+  }
+}

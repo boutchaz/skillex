@@ -1,0 +1,14 @@
+:root {
+	--font-body: Arial, sans-serif;
+}
+@font-face {
+    font-family: 'archiaregular';
+    src: url('/app/fonts/archia-regular-webfont.eot');
+    src: url('/app/fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/app/fonts/archia-regular-webfont.woff2') format('woff2'),
+         url('/app/fonts/archia-regular-webfont.woff') format('woff'),
+         url('/app/fonts/archia-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
